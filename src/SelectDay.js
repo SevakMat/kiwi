@@ -7,14 +7,16 @@ function SelectDay({test}){
     function rendDays(){
        return days.map((item,index)=>{
             return(
-                <div onClick={()=>{ test()}} key={index} >{item }</div>
+                <div style={{margin:1}} onClick={()=>{ test()}} key={index} >{item +" " }</div>
             )
         })
     }
 
     return(
-        <div className="scrollDays">
-            {rendDays()}
+        <div className="parent">
+            <div className="child">
+                {rendDays()}
+            </div>
         </div>
     )
 }

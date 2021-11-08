@@ -11,17 +11,18 @@ function BassketAttachment() {
 
     function renderAttachmentItem(item,index){
         return(
-            <div key={index} style={{border:"solid",borderRadius: "30px", padding:"20px"}}>
-                <div>{item.name}</div>
+            <div key={index} style={{border:"solid", textAlign: "center",borderRadius: "30px", padding:"0px 20px" ,width:"150px",margin:2}}>
+                <div >{item.name}</div>
                 <div>{item.status}</div>
                 <div>{item.number}</div>
                 <div>{item.price}</div>
+                <button>potkluchit</button>
             </div>
         )
     }
 
     return (
-    <div style={{display:"grid"}}>
+    <div style={{display:"flex", flexWrap:"wrap"}}>
         {attachmentList.map((item,index)=>{
            return renderAttachmentItem(item,index)
         })}
