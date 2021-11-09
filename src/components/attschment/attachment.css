@@ -1,0 +1,14 @@
+.attachmentItemsBlack{
+    display:flex; 
+    flex-wrap:wrap;
+}
+
+.attachmentItem{
+    display:grid;
+     border:solid;
+    text-Align:center;
+    border-Radius: 15px;
+    padding:9px 10px;
+    width:180px;
+    margin:10px;
+}

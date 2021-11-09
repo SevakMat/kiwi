@@ -1,5 +1,5 @@
-import BassketAttachment from "./BassketAttachment";
-import BassketPlatform from "./BassketPlatform";
+import BassketAttachment from "./attschment/BassketAttachment";
+import BassketPlatform from "./platform/BassketPlatform";
 
 function App() {
   return (
