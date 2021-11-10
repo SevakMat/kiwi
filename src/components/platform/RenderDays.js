@@ -6,10 +6,7 @@ function RendDays({days,test}) {
 
     return (
       <Carousel
-      onChange={(currentItem,pageIndex) => test(pageIndex+1)
-
-        
-      }
+        onChange={(currentItem,pageIndex) => test(pageIndex+1)}
       >
         {days.map((item,i) => {
             return(

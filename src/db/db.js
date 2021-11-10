@@ -188,21 +188,21 @@ export const grafData=[
           ]
     },
     {
-        day:9,
+        day:10,
         data:[
-            { year: '1', value: 1 },
+            { year: '1', value: 0 },
             { year: '2', value: 4 },
-            { year: '3', value: 9.5 },
+            { year: '3', value: 0 },
             { year: '4', value: 5 },
-            { year: '5', value: 3 },
+            { year: '5', value: 0 },
             { year: '6', value: 7 },
-            { year: '7', value: 3.5 },
+            { year: '7', value: 0 },
             { year: '8', value: 8 },
-            { year: '9', value: 1.9 },
+            { year: '9', value: 0 },
             { year: '10', value: 5 },
-            { year: '11', value: 3 },
+            { year: '11', value: 0 },
             { year: '12', value: 1 },
-            { year: '13', value: 3 },
+            { year: '13', value: 0 },
           ]
     }
 

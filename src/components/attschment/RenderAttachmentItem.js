@@ -1,3 +1,5 @@
+import Button from "../publicComponents/Button.js"
+
 import "./attachment.css";
 
 const RenderAttachmentItem = ({item}) => {
@@ -9,7 +11,7 @@ const RenderAttachmentItem = ({item}) => {
             </div>
             <h3>{item.number}</h3>
             <div>{item.price}</div>
-            <button  className="btn btn-primary">пополнить</button>
+            <Button className={"btn btn-primary"} text ={"пополнить"} />
         </div>
     )
 }

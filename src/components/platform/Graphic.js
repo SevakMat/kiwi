@@ -8,10 +8,14 @@ import "./platform.css"
 function Graphic() {
   const [data, setGraphData ]  = useState([])
 
+  function getAndSetDataInState(day){
+    getGraphicData(day).then((data)=>{setGraphData(data)})
+  }
+
   useEffect(()=>{
     const date = new Date();
     const day =  date.getUTCDate();
-    setGraphData(getGraphicData(day))
+    getAndSetDataInState(day)
   },[])
 
   const config = {
@@ -26,7 +30,7 @@ function Graphic() {
   };  
 
   function selectingDay(day){
-    setGraphData(getGraphicData(day))
+    getAndSetDataInState(day)
   }
 
   return (

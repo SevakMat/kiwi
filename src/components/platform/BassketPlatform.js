@@ -14,7 +14,7 @@ function BassketPlatform() {
     useEffect(()=>{
         const date = new Date();
         const day =  date.getUTCDate();
-        setInfoForPlatform(platformInfo(day))
+        platformInfo(day).then((data)=>{setInfoForPlatform(data)})
     },[]);
 
 
